@@ -45,36 +45,36 @@ To build a tool that helps healthcare professionals identify individuals who may
   - **encoded** categorical variables for Logistic Regression and MLP algorithms.
   - performed **correlation analysis**  
 
-![cleaned dataset](images/cleaned_dataset.png)
+![cleaned dataset](Models/cleaned_dataset.png)
 
 ### **Exploratory Analysis** - 
  Analyzed the distribution of the target variable and the impact of the target variable on other features
-![treatment Distribution](images/treatment_distribution.png)
+![treatment Distribution](Models/treatment_distribution.png)
 
 ### **Models Used**
 - **MLP (Multi-Layer Perceptron)**: A neural network model for capturing deep, complex relationships in the data to improve prediction accuracy.
 
-![mlp](images/mlp.png)
+![mlp](Models/mlp.png)
 
 - **Logistic Regression**: A basic classification model used as a benchmark to predict whether an individual needs treatment (binary classification).
 
-![logistic](images/logistic.png)
+![logistic](Models/logistic.png)
 
 - **CatBoost**: A gradient boosting model optimized for **categorical features**, providing high performance with less data preprocessing.
 
-![catboost](images/catboost.png)
+![catboost](Models/catboost.png)
 
 ### **Feature Importance on Catboost Model**: This was done to determine the features that had more effect on the target. 
 
-![feature_importance](images/feature_importance.png)
+![feature_importance](Models/feature_importance.png)
 
 ### **Model Evaluation**
 - **Accuracy**: Achieved **78.63%** accuracy using **CatBoost**.
 - **Precision, Recall, and F1-Score**: Evaluated the model’s ability to predict mental health outcomes correctly, with a focus on minimizing false positives and false negatives.
 - **Key Insights**: country, occupation, and family history were found to be significant predictors for mental health treatment needs.
 
-![final_model](images/final_model.png)
-![confusion_matrix](images/confusion_matrix.png)
+![final_model](Models/final_model.png)
+![confusion_matrix](Models/confusion_matrix.png)
 
 ### **Tuning and Optimization**
 - **Hyperparameter Tuning**: Used **feature selection** and **tuning** to optimize model hyperparameters and enhance prediction accuracy.
